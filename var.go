@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func firstMainmain() {
 	// Declare and initialize variables
 	var name string = "Alice"
 	var age int = 30
