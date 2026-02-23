@@ -35,7 +35,7 @@ func call() {
 	incr2()
 }
 
-func main() {
+func myFun() {
 	call()
 }
 
