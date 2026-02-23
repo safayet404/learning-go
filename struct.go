@@ -16,13 +16,13 @@ func main() {
 		Age:  26,
 	}
 
-	fmt.Println("name : ", user1.Name)
-	fmt.Println("age : ", user1.Age)
-
 	user2 := User{
 		Name: "Roki",
 		Age:  33,
 	}
+
+	fmt.Println("name : ", user1.Name)
+	fmt.Println("age : ", user1.Age)
 
 	fmt.Println("name : ", user2.Name)
 	fmt.Println("age : ", user2.Age)
