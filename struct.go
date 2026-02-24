@@ -7,7 +7,7 @@ type User struct {
 	Age  int
 }
 
-func main() {
+func structFun() {
 
 	var user1 User
 
