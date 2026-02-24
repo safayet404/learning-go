@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	arr := [6]string{"This", "is", "a", "go", "interview", "questions"}
-	fmt.Println(arr)
+	s := []int{1, 2, 5}
 
-	s := arr[1:4]
 	fmt.Println(s)
+	fmt.Println(len(s))
+	fmt.Println(cap(s))
 }
