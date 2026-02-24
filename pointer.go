@@ -6,7 +6,7 @@ func print(numbers *[3]int) {
 	fmt.Println(numbers)
 }
 
-func main() {
+func myFuns() {
 
 	// x := 10
 
