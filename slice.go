@@ -2,19 +2,24 @@ package main
 
 import "fmt"
 
+func changeSlice(p []int) []int {
+	p[0] = 27
+	p = append(p, 50)
+
+	return p
+}
+
 func main() {
 
-	var x []int
+	x := []int{1, 2, 3, 4, 5}
 
-	x = append(x, 1)
-	x = append(x, 2)
-	x = append(x, 3)
+	x = append(x, 6)
+	x = append(x, 7)
+
+	a := x[4:]
+	y := changeSlice(a)
+
 	fmt.Println(x)
-	fmt.Println(len(x))
-	fmt.Println(cap(x))
-	x = append(x, 4)
-	fmt.Println(x)
-	fmt.Println(len(x))
-	fmt.Println(cap(x))
+	fmt.Println(y)
 
 }
