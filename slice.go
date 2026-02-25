@@ -3,17 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	// s := []int{1, 2, 5}
 
-	// fmt.Println(s)
-	// fmt.Println(len(s))
-	// fmt.Println(cap(s))
+	var x []int
 
-	s := make([]int, 3, 5)
-
-	s[0] = 10
-	s[2] = 50
-
-	fmt.Println(s)
+	x = append(x, 1)
+	x = append(x, 2)
+	x = append(x, 3)
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
+	x = append(x, 4)
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
 
 }
