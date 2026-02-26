@@ -9,7 +9,7 @@ func changeSlice(p []int) []int {
 	return p
 }
 
-func main() {
+func ss() {
 
 	x := []int{1, 2, 3, 4, 5}
 
