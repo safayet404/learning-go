@@ -2,15 +2,46 @@ package main
 
 import "fmt"
 
-func sum(a int, b int) (s int) {
-	s = a + b
+func calculate() (result int) {
+
+	fmt.Println("first", result)
+	defer func() {
+		result = result + 10
+
+		fmt.Println("defer", result)
+	}()
+
+	result = 5
+
+	fmt.Println("second result", result)
+
 	return
 }
 
+func calc() int {
+
+	result := 0
+
+	fmt.Println("first", result)
+	defer func() {
+		result = result + 10
+
+		fmt.Println("defer", result)
+	}()
+
+	result = 5
+
+	fmt.Println("second result", result)
+
+	return result
+
+}
 func main() {
 
-	r := sum(5, 10)
+	a := calculate()
+	b := calc()
 
-	fmt.Println(r)
+	fmt.Println(a)
+	fmt.Println(b)
 
 }
